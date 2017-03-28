@@ -25,7 +25,7 @@ To evaluate a model, run the following commands:
 ```bash
 unzip path_to_pretrained_models.zip
 cd src
-python gen_test_data.py maps/map1.txt #~200MB for each map
+python gen_test_data.py ../maps/map1.txt #~200MB for each map
 python eval_model.py anneal_map1
 python gen_viz.py anneal_map1
 ```
@@ -40,7 +40,7 @@ To train a new model, create a new experiment file in the src/experiments direct
 
 ```bash
 cd src
-python gen_train_data.py maps/map1.txt #~3GB for each map
+python gen_train_data.py ../maps/map1.txt #~3GB for each map
 python run.py exp_name #Replace "exp_name" with the name of your experiment
 ```
 
