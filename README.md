@@ -17,7 +17,7 @@ Dependencies: Numpy, Tensorflow, and Matplotlib (for visualizations)
 
 ### Evaluate a pretrained model:
 
-We provide 6 pretrained models you can use to reproduce our results. Download the models [here](https://github.com/cbschaff/NBP/releases/download/untagged-fc96f7a2112b16196f33/pretrained_models.zip).
+We provide 6 pretrained models you can use to reproduce our results. Download the models [here](https://github.com/cbschaff/NBP/releases/download/v1.0/pretrained_models.zip).
 
 To evaluate a model, run the following commands:
 
