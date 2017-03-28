@@ -2,7 +2,7 @@
 
 This code accompanies the paper *Jointly Optimizing Placement and Inference for Beacon-based Localization*.
 
-Arxiv Link: (Arxiv link here)
+Arxiv Link: [https://arxiv.org/abs/1703.08612](https://arxiv.org/abs/1703.08612)
 
 Dependencies: Numpy, Tensorflow, and Matplotlib (for visualizations)
 
