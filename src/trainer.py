@@ -10,8 +10,8 @@ import numpy as np
 
 def train(model,gt,lr,mom,wd=0., beacon_reg=0.):
     bsz = tf.to_int32(gt.get_shape()[0])
-    n = tf.to_int32(model.out.get_shape()[0]) / bsz
-    out = tf.reshape(model.out, [n, bsz, -1])
+    n = tf.to_int32(model.out.get_shape()[0]) // bsz
+    out = tf.reshape(model.out, tf.stack([n, bsz, -1]))
     max_err = tf.reduce_max(tf.reduce_sum((out - gt) ** 2, reduction_indices=2), reduction_indices=0)
     loss = tf.reduce_mean(max_err)
     obj = loss

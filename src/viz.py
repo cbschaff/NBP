@@ -48,7 +48,7 @@ def draw_map(exp, outfile=None, it=None):
     clrs = []
     for j in range(nChan):
         clr = plt.cm.jet( int(round(float(j)/float(nChan-1)*255.)) )
-        clr = '#' + ''.join(['%02x' % round(d*255) for d in clr[0:3]])
+        clr = '#' + ''.join(['%02x' % int(round(d*255)) for d in clr[0:3]])
         clrs.append(clr)
 
     # Draw transmitters
@@ -106,7 +106,7 @@ def draw_heatmap(exp, outfile=None, stat='mean'):
     clrs = []
     for j in range(nChan):
         clr = plt.cm.jet( int(round(float(j)/float(nChan-1)*255.)) )
-        clr = '#' + ''.join(['%02x' % round(d*255) for d in clr[0:3]])
+        clr = '#' + ''.join(['%02x' % int(round(d*255)) for d in clr[0:3]])
         clrs.append(clr)
 
     # Draw transmitters

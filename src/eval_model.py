@@ -81,7 +81,7 @@ def eval_model(exp, nsample):
     # Eval Loop
     mprint(stamp()+"Starting model evaluation:")
     c = 0
-    for i in xrange(n_batches):
+    for i in range(n_batches):
 
         # Run training step & get next batch
         bdata = batcher.get_batch()

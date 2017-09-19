@@ -9,7 +9,7 @@ import tensorflow as tf
 import numpy as np
 
 WFAC   = 0.5
-DMIN   = 1.0
+DMIN   = 0.001
 
 P0     = 6.25e-4
 zeta   = 2.0

@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
     mapfile = sys.argv[1]
     if len(sys.argv) < 3:
-        nbatch = 200
+        nbatch = 2000
     else:
         nbatch = int(sys.argv[2])
 
